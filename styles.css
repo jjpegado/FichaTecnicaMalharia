@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo{
+        width: 150px;
+        height: 100px;
+    }
+
+    .title{
+        display: flex;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        padding: 10px 10px;
+        border-radius: 5px;
+        align-items: center;
+    }
+    .info{
+        display: flex;
+        margin-left: 20px;
+        gap: 1px;
+
+        .code{
+            width: 144px;
+            height: 134px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            
+            
+            .title-code{
+                width: 100%;
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid black;
+                display: flex;
+                justify-content: center;
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .code-number{
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+
+        .date{
+            width: 144px;
+            height: 134px;
+            display: flex;
+            border: 1px solid black;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title-date{
+                width: 95%;
+                display: flex;
+                padding: 5px;
+                border-bottom: 1px solid black;
+                justify-content: center;
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .date-number{
+                    font-size: 22px;
+                    font-weight: bold;
+            }
+        }
+    }
+
+    .input-edit {
+        font-size: 20px;
+        width: 130px;
+        height: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+}
+
+.input-edit {
+    font-size: 18px;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.header img {
+    width: 150px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.section-title {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 0.8em;
+}
+
+}
+
+.table-title{
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+td.highlight:empty::before {
+    content: "Digite aqui...";
+    color: gray;
+}
+
+td.highlight::before {
+    content: attr(data-placeholder);
+    color: gray;
+    display: block;
+}
+
+td.highlight:not(:empty)::before {
+    content: "";
+}
