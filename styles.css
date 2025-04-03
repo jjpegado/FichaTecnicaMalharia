@@ -162,3 +162,16 @@ td.highlight::before {
 td.highlight:not(:empty)::before {
     content: "";
 }
+
+
+@media print {
+    body {
+        margin: 0;
+    }
+    table {
+        width: 100%;
+    }
+    td {
+        font-size: 10px; 
+    }
+}
